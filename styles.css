@@ -1,0 +1,152 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('https://i.postimg.cc/44t5KXWN/YOOOOOOOOOO-transformed.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    color: neon;
+    text-shadow: 0 0 10px neon-pink, 0 0 20px neon-pink, 0 0 30px neon-pink;
+}
+
+.subheading {
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* News Section */
+.news-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 0, 0.4);
+    animation: fadeIn 2s;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4);
+}
+
+.content-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.keyword {
+    font-size: 24px; /* Made slightly larger than paragraph */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: gray; /* Changed to red-neon */
+    text-shadow: 0 0 10px red, 0 0 10px green, 0 0 10px green; /* Neon effect */
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: black; /* Paragraph text in pure black */
+}
+
+.image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 2s;
+}
+
+/* Video Section */
+.video-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.video-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.video-icon img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff;
+}
+
+.video-link {
+    font-size: 18px;
+    color: neon;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.video-link:hover {
+    color: yellow;
+}
